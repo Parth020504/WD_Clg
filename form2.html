@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_style.css">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2 style="text-align: center; margin-top:30px">FeedBack Form</h2>
+    <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" name="" id="fname" placeholder="Your firstname"><br><br> 
+        <label for="lname">Last Name</label>
+        <input type="text" name="" id="lname" placeholder="Your lastname"><br><br> 
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" placeholder="Your email"><br><br> 
+        <label for="contact">Contact Info</label>
+        <input type="number" name="" id="contact" placeholder="Your contact"><br><br> 
+        <label for="sap">SAP ID</label>
+        <input type="text" name="" id="sap" placeholder="Your firstname"><br><br> 
+        <label for="date">Date</label>
+        <input type="date" name="" id="date"><br><br> 
+        <label for="year">Year</label>
+        <input type="radio" name="year" id="">F.Y B.Tech
+        <input type="radio" name="year" id="">S.Y B.Tech
+        <input type="radio" name="year" id="">T.Y B.Tech
+        <input type="radio" name="year" id="">B.Tech
+
+        <br><br>
+        <label for="department">Department:</label>
+        <select id="committee" name="department" required><br><br>
+            <option value="" disabled selected>Select Department</option>
+            <option value="comps">Computer</option>
+            <option value="IT">IT</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="EXTC">EXTC</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br><br>
+        Mode of lecture conduction:
+        <input type="checkbox" name="mode" id="">Offline
+        <input type="checkbox" name="mode" id="">Online
+
+        <br><br>
+        <h2>Content</h2>
+        
+        Was the content interesting: <input type="range" name="" id=""><br><br>
+        Was the content understandable: <input type="range" name="" id=""><br><br>
+        Was there clarity in the content?: <input type="range" name="" id="">
+
+        <br><br>
+        <h2>Structure</h2>
+        How was the focus of the lecture: 
+        <input type="radio" name="focus" id="">1
+        <input type="radio" name="focus" id="">2
+        <input type="radio" name="focus" id="">3
+        <input type="radio" name="focus" id="">4
+        <input type="radio" name="focus" id="">5
+
+        <br><br>
+
+        Was the lecture useful:
+        <input type="radio" name="useful">1
+        <input type="radio" name="useful">2
+        <input type="radio" name="useful">3
+        <input type="radio" name="useful">4
+        <input type="radio" name="useful">5
+
+        <br><br>
+
+        Did the lectures meet your expectations:
+        <input name="expectation" type="radio">1
+        <input name="expectation" type="radio">2
+        <input name="expectation" type="radio">3
+        <input name="expectation" type="radio">4
+        <input name="expectation" type="radio">5
+
+        <br><br>
+
+        <h2>Overall</h2>
+        Were you satisfied with the lecture: 
+        <input type="radio" name="radio" id="">Yes
+        <input type="radio" name="radio" id="">No 
+
+        <br><br>
+
+        What is the overall impression of the session: 
+        <input type="radio" name="session" id="">Good
+        <input type="radio" name="session" id="">Average
+
+        <br><br>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <script>
+        const sub = document.getElementById("submit");
+        sub.addEventListener('click',()=>{
+            alert("Than you for your response!!");
+        })
+    </script>
+</body>
+</html>

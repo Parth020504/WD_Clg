@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>BMW Cars</title>
+    <style>
+        .container{
+          display: flex;
+          margin: 5% auto;
+          /* flex-direction: column; */
+        }
+        .image{
+          padding: 15px 20px;
+          width: 35%;
+        }
+
+        .image img{
+          border-radius: 50%;
+          border: 3px solid rgb(65, 60, 203);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+          width: 100%;
+          height: auto;
+        }
+        .image img:hover{
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        .desc{
+            width: 70%;
+            justify-content: center;
+            margin-left: 20px;
+            align-items: center;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px rgb(173, 166, 166);
+            background-color: #e2e2e2;
+            transition: all .3s ease-out;
+        }
+        .desc:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .desc h2{
+            margin-bottom: 15px;
+            text-align: center;
+
+        }
+        .desc p{
+            margin-top: 4%;
+        }
+        h2 span{
+            color: rgb(32, 32, 231);
+        }
+        .extra-text{
+          margin-left: 40%;
+          padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="boostrap.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other Cars</a>
+                      <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">BMW</a></li>
+                      <li><a href="#" class="dropdown-item">Mercedes</a></li>
+                      <li><a href="#" class="dropdown-item">Audi</a></li>
+                    </ul>
+                    </li>
+                  </ul>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="container">
+        <div class="image">
+          <img src="images/audi1.jpg" alt="" id="img">
+        </div>
+        <div class="desc">
+            <h2><span>BMW</span> Motors - <span>Ultimate</span> Driving <span>Pleasure</span></h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque mollitia fuga sapiente voluptate temporibus iste obcaecati maxime voluptates adipisci illum reprehenderit, dolores laudantium praesentium aliquam optio expedita cumque perspiciatis ipsum, veritatis soluta commodi! Pariatur nemo, eum quibusdam perspiciatis deleniti tenetur eius quaerat obcaecati nobis sint! Vero veniam possimus dignissimos, aliquam numquam amet natus corrupti autem at fugit asperiores ad sit suscipit, quia debitis tempore! Qui, exercitationem? Hic corporis non minima at eligendi. Numquam, adipisci dicta dolorem dolores sint illo doloremque in dignissimos dolore quod fuga suscipit ex non amet architecto earum nam, fugit ullam, dolorum nostrum veniam. Rerum, exercitationem minima.
+        </p>
+      </div>
+    </div>
+
+    <div class="extra-text">
+      
+    </div>
+
+    <script>
+      const img = document.getElementById( "img" );
+      const extra=document.querySelector(".extra-text");
+      img.addEventListener("mouseover", ()=>{
+        extra.style.display='block';
+        extra.style.fontSize="40px";
+        // extra.style.transition="all .3s ease";
+        extra.innerHTML="You are viewing an Audi";
+      })
+
+      img.addEventListener("mouseout",()=>{
+        extra.style.display='none';
+      });
+    </script>
+</body>
+</html>

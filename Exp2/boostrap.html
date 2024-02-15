@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+     <style>
+      .card{
+        cursor: pointer;
+        transition: all .3s ease;
+        border: 2px solid black;
+      }
+      .card:hover{
+        transform: scale(1.05);
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other Cars</a>
+                      <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">BMW</a></li>
+                      <li><a href="#" class="dropdown-item">Mercedes</a></li>
+                      <li><a href="#" class="dropdown-item">Audi</a></li>
+                    </ul>
+                    </li>
+                  </ul>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <figure class="text-end">
+        <blockquote class="blockquote">
+          <p>Nobody is perfect, but if you drive a BMW, you're pretty close</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Parth Gandhi <cite title="Source Title">Head of Marketing</cite>
+        </figcaption>
+      </figure>
+
+    <div class="container" style="display: flex; flex-wrap:wrap; gap: 2rem;">
+      <div class="card" style="width: 18rem;" onclick="location.href='bmw.html'">
+        <img src="images/bmw1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BMW 7 Series</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;" onclick="location.href='bmw.html'">
+        <img src="images/bmw2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BMW i7</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;" onclick="location.href='merc.html'">
+        <img src="images/merc1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mercedes GLS 600</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;" onclick="location.href='merc.html'">
+        <img src="images/merc2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The G-Wagon</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;" onclick="location.href='audi.html'">
+        <img src="images/audi1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Audi A8</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;" onclick="location.href='audi.html'">
+        <img src="images/audi2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Audi Rs-6</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;" onclick="location.href='porsche.html'">
+        <img src="images/porsche1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Porsche Cayenne</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;" onclick="location.href='porsche.html'">
+        <img src="images/porsche2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Porsche 911</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+
