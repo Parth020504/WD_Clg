@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="handleButtonClick('AC')" class="operator">
+                    <input type="button" value="DE" onclick="handleButtonClick('DE')" class="operator">
+                    <input type="button" value="." onclick="handleButtonClick('.')">
+                    <input type="button" value="/" onclick="handleButtonClick('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="handleButtonClick('7')">
+                    <input type="button" value="8" onclick="handleButtonClick('8')">
+                    <input type="button" value="9" onclick="handleButtonClick('9')">
+                    <input type="button" value="*" onclick="handleButtonClick('*')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="handleButtonClick('4')">
+                    <input type="button" value="5" onclick="handleButtonClick('5')">
+                    <input type="button" value="6" onclick="handleButtonClick('6')">
+                    <input type="button" value="-" onclick="handleButtonClick('-')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="handleButtonClick('1')">
+                    <input type="button" value="2" onclick="handleButtonClick('2')">
+                    <input type="button" value="3" onclick="handleButtonClick('3')">
+                    <input type="button" value="+" onclick="handleButtonClick('+')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="handleButtonClick('00')">
+                    <input type="button" value="0" onclick="handleButtonClick('0')">
+                    <input type="button" value="=" class="equal operator" onclick="handleButtonClick('=')">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
